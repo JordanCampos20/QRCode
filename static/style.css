@@ -1,0 +1,31 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  background: #e1e2e3;
+}
+
+body .container{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 47px;
+  perspective: 2700px;
+}
+
+body .container .row{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 47px;
+  perspective: 2700px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="static/style.css"/>
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+        />
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <title>{% block title %}QRCode Generator{% endblock %}</title>
+    </head>
+    <body>
+        <div class="container">
+            <p><h1 align="center">QRCode Generator</h1></p>
+            <div class="row">
+                <h2>Select an image to create the QR Code</h2>
+                <p>
+                    {% with messages = get_flashed_messages() %}
+                      {% if messages %}
+                        <ul>
+                        {% for message in messages %}
+                          <li>{{ message }}</li>
+                        {% endfor %}
+                        </ul>
+                      {% endif %}
+                    {% endwith %}
+                </p>
+                {% if filename %}
+                    <div>
+                        <p>
+                            <img src="{{ url_for('display_image', filename=filename) }}">
+                        </p>
+                    </div>
+                {% endif %}
+                <form method="post" action="/" enctype="multipart/form-data">
+                    <dl>
+                        <p>
+                            <input type="file" name="file" class="form-control" placeholder="Image" autocomplete="off" required>
+                        </p>
+                        <p>
+                            <input type="text" name="url" class="form-control" placeholder="Link" autocomplete="off" required>
+                        </p>
+                        <p>
+                            <input type="text" name="name" class="form-control" placeholder="Name For QR Code" autocomplete="off" required>
+                        </p>
+                    </dl>
+                    <p>
+                        <input type="submit" value="Submit" class="btn btn-info">
+                    </p>
+                </form>
+            </div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+</html>
