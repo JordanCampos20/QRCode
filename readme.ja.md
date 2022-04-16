@@ -10,7 +10,7 @@
 
 <p align="center"><img src="Images/preview.png" alt="プロジェクトの最終結果"></p>
 
-<h4 align="center"><a href="https://webqrcodegenerator.herokuapp.com">クリックしてプロジェクトを表示</a></h4>
+<h4 align="center"><a href="https://webqrcodegeneratorreserve.herokuapp.com">クリックしてプロジェクトを表示</a></h4>
 <h4 align="center"><a href="https://github.com/JordanCampos20/QRCode/archive/refs/heads/main.zip">クリックしてプロジェクトをダウンロード</a></h4>
 
 ---

@@ -10,7 +10,7 @@
 
 <p align="center"><img src="Images/preview.png" alt="프로젝트의 최종 결과"></p>
 
-<h4 align="center"><a href="https://webqrcodegenerator.herokuapp.com">프로젝트를 보려면 클릭하십시오</a></h4>
+<h4 align="center"><a href="https://webqrcodegeneratorreserve.herokuapp.com">프로젝트를 보려면 클릭하십시오</a></h4>
 <h4 align="center"><a href="https://github.com/JordanCampos20/QRCode/archive/refs/heads/main.zip">프로젝트 다운로드 클릭</a></h4>
 
 ---

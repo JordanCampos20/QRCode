@@ -10,7 +10,7 @@
 
 <p align="center"><img src="Images/preview.png" alt="項目的最終結果"></p>
 
-<h4 align="center"><a href="https://webqrcodegenerator.herokuapp.com">點擊查看項目</a></h4>
+<h4 align="center"><a href="https://webqrcodegeneratorreserve.herokuapp.com">點擊查看項目</a></h4>
 <h4 align="center"><a href="https://github.com/JordanCampos20/QRCode/archive/refs/heads/main.zip">點擊下載項目</a></h4>
 
 ---

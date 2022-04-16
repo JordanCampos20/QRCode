@@ -11,7 +11,7 @@
 <p align="center"><img src="Images/preview.png" alt="项目的最终结果
 "></p>
 
-<h4 align="center"><a href="https://webqrcodegenerator.herokuapp.com">点击查看项目</a></h4>
+<h4 align="center"><a href="https://webqrcodegeneratorreserve.herokuapp.com">点击查看项目</a></h4>
 <h4 align="center"><a href="https://github.com/JordanCampos20/QRCode/archive/refs/heads/main.zip">点击下载项目</a></h4>
 
 ---
